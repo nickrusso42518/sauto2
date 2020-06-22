@@ -14,7 +14,7 @@ class CiscoUmbrellaReporting(CiscoEndpointBase):
     Declaration of Cisco Umbrella Reporting SDK class.
     """
 
-    def __init__(self, api_key, api_secret):
+    def __init__(self, api_key, api_secret, org_id):
         """
         Constructor to create a new object. Umbrella Reporting uses HTTP basic
         auth so the constructor requires a api_key and api_secret. Also takes
@@ -39,7 +39,6 @@ class CiscoUmbrellaReporting(CiscoEndpointBase):
 
         # Body was not present; return empty dict for consistency
         return {}
-
 
     @staticmethod
     def build_from_env_vars():

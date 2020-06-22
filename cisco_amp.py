@@ -38,7 +38,6 @@ class CiscoAMP(CiscoEndpointBase):
         # Body was not present; return empty dict for consistency
         return {}
 
-
     @staticmethod
     def build_from_env_vars():
         """

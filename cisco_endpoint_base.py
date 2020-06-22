@@ -24,14 +24,12 @@ class CiscoEndpointBase:
 
     def base_req(self, resource, method="get", **kwargs):
         resp = self.sess.request(
-            url=f"{self.base_url}/{resource}",
-            method=method,
-            **kwargs,
+            url=f"{self.base_url}/{resource}", method=method, **kwargs
         )
         resp.raise_for_status()
 
         return resp
-        
+
     @staticmethod
     def load_env_vars(*args):
         ev_list = []
@@ -43,4 +41,3 @@ class CiscoEndpointBase:
             ev_list.append(ev_value)
 
         return ev_list
-

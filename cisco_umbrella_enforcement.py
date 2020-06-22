@@ -2,29 +2,29 @@
 
 """
 Author: Nick Russo
-Purpose: Create a mini-SDK around Cisco ThreatGrid (TG) Cloud
+Purpose: Create a mini-SDK around the Cisco Umbrella Enforcement API
 to simplify API interactions.
 """
 
 from cisco_endpoint_base import CiscoEndpointBase
 
 
-class CiscoTG(CiscoEndpointBase):
+class CiscoUmbrellaEnforcement(CiscoEndpointBase):
     """
-    Declaration of Cisco ThreatGrid (TG) SDK class.
+    Declaration of Cisco Umbrella Enforcement SDK class.
     """
 
-    def __init__(self, api_key):
+    def __init__(self, cust_key):
         """
-        Constructor to create a new object. TG uses a query parameter
-        named api_key in each request for authentication.
+        Constructor to create a new object. This API uses a query parameter
+        named customerKey (cust_key) in each request for authentication.
         """
 
         # Call the base class constructor to pass in the base URL
-        super().__init__(base_url="https://panacea.threatgrid.com/api/v2")
+        super().__init__(base_url="https://s-platform.api.opendns.com/1.0")
 
         # Store the API key for use as a query parameters later
-        self.auth_params = {"api_key": api_key}
+        self.auth_params = {"customerKey": cust_key}
 
     def req(self, resource, **kwargs):
 
@@ -50,8 +50,8 @@ class CiscoTG(CiscoEndpointBase):
         """
         Static class-level helper method to quickly create a new CiscoTG
         object using environment variables:
-          1. TG_API_KEY: Your personal API key for ThreatGrid
+          1. UMB_ENF_CUST_KEY: The customer key for a the Umbrella integration
         """
 
-        api_key, = CiscoEndpointBase.load_env_vars("TG_API_KEY")
-        return CiscoTG(api_key)
+        cust_key, = CiscoEndpointBase.load_env_vars("UMB_ENF_CUST_KEY")
+        return CiscoUmbrellaEnforcement(cust_key)
