@@ -29,6 +29,12 @@ class CiscoUmbrellaReporting(CiscoEndpointBase):
         self.auth = (api_key, api_secret)
 
     def req(self, resource, **kwargs):
+        """
+        Issues a generic HTTP to the specific resource using the parent
+        base_url() functionality. Any other keyword arguments are
+        transparently passed through. Returns the HTTP response body
+        as JSON (Python objects) or an empty dicitonary if no body exists.
+        """
 
         # Call the base_req method and include the HTTP basic auth tuple
         resp = super().base_req(resource, auth=self.auth, **kwargs)

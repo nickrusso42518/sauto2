@@ -2,8 +2,7 @@
 
 """
 Author: Nick Russo
-Purpose: Create a mini-SDK around Cisco AMP Cloud
-to simplify API interactions.
+Purpose: Trivial Umbrella Reporting regression test.
 """
 
 from cisco_umbrella_reporting import CiscoUmbrellaReporting

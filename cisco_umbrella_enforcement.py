@@ -27,6 +27,12 @@ class CiscoUmbrellaEnforcement(CiscoEndpointBase):
         self.auth_params = {"customerKey": cust_key}
 
     def req(self, resource, **kwargs):
+        """
+        Issues a generic HTTP request to a specific resource using the parent
+        base_url() functionality. Any other keyword arguments are
+        transparently passed through. Returns the HTTP response body
+        as JSON (Python objects) or an empty dicitonary if no body exists.
+        """
 
         # If the user wants to query for some kwargs as well, we need
         # to update that argument with our base params dict which

@@ -2,8 +2,7 @@
 
 """
 Author: Nick Russo
-Purpose: Create a mini-SDK around Cisco ThreatGrid (TG) Cloud
-to simplify API interactions.
+Purpose: Trivial ThreatGrid regression test.
 """
 
 from cisco_tg import CiscoTG

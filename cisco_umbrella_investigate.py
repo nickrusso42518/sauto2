@@ -2,29 +2,29 @@
 
 """
 Author: Nick Russo
-Purpose: Create a mini-SDK around Cisco ThreatGrid (TG) Cloud
+Purpose: Create a mini-SDK around the Cisco Umbrella Investigate API
 to simplify API interactions.
 """
 
 from cisco_endpoint_base import CiscoEndpointBase
 
 
-class CiscoTG(CiscoEndpointBase):
+class CiscoUmbrellaInvestigate(CiscoEndpointBase):
     """
-    Declaration of Cisco ThreatGrid (TG) SDK class.
+    Declaration of Cisco Umbrella Investigate SDK class.
     """
 
     def __init__(self, api_key):
         """
-        Constructor to create a new object. TG uses a query parameter
-        named api_key in each request for authentication.
+        Constructor to create a new object. This API uses a Bearer token
+        for authorization included as an HTTP header named "api_key".
         """
 
         # Call the base class constructor to pass in the base URL
-        super().__init__(base_url="https://panacea.threatgrid.com/api/v2")
+        super().__init__(base_url="https://investigate.api.umbrella.com")
 
-        # Store the API key for use as a query parameters later
-        self.auth_params = {"api_key": api_key}
+        # Update the existing headers dictionary with the authz token
+        self.headers["Authorization"] = f"Bearer {api_key}"
 
     def req(self, resource, **kwargs):
         """
@@ -34,14 +34,8 @@ class CiscoTG(CiscoEndpointBase):
         as JSON (Python objects) or an empty dicitonary if no body exists.
         """
 
-        # If the user wants to query for some kwargs as well, we need
-        # to update that argument with our base params dict which
-        # is necessary for authentication. Yes, this is sloppy!
-        if "params" in kwargs:
-            kwargs["params"].update(self.auth_params)
-        else:
-            kwargs["params"] = self.auth_params
-
+        # Call the base_req method. Headers have already been updated, so
+        # there is nothing additional to pass in
         resp = super().base_req(resource, **kwargs)
 
         # If there is a body, it will be JSON; convert to Python objects
@@ -56,8 +50,8 @@ class CiscoTG(CiscoEndpointBase):
         """
         Static class-level helper method to quickly create a new CiscoTG
         object using environment variables:
-          1. TG_API_KEY: Your personal API key for ThreatGrid
+          1. UMB_INV_API_KEY: The API key for the Umbrella Investigate API
         """
 
-        api_key, = CiscoEndpointBase.load_env_vars("TG_API_KEY")
-        return CiscoTG(api_key)
+        api_key, = CiscoEndpointBase.load_env_vars("UMB_INV_API_KEY")
+        return CiscoUmbrellaInvestigate(api_key)

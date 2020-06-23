@@ -2,8 +2,7 @@
 
 """
 Author: Nick Russo
-Purpose: Create a mini-SDK around Cisco ThreatGrid (TG) Cloud
-to simplify API interactions.
+Purpose: Trivial Umbrella Enforcement regression test.
 """
 
 from cisco_umbrella_enforcement import CiscoUmbrellaEnforcement
