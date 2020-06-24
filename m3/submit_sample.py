@@ -13,8 +13,10 @@ import time
 from cisco_tg import CiscoTG
 
 
+# Specify constants specific to your environment/desires
 CALLBACK_URL = "https://webhook.site/0b43c29f-8e0c-4ae4-9b3f-9f1df76dcaf8"
 OUTDIR = "sample_details"
+
 
 def main(filename):
     """
@@ -30,8 +32,11 @@ def main(filename):
     }
 
     # Open the file in binary format then include in POST request
+    # Note the body is NOT JSON, but is www form data (use "data")
     with open(filename, "rb") as handle:
-	    sample = tg.req("samples", method="post", files={"sample": handle}, json=body)
+        sample = tg.req(
+            "samples", method="post", files={"sample": handle}, data=body
+        )
 
     # Store the sample ID and state for use later
     sample_id = sample["data"]["id"]
@@ -63,7 +68,7 @@ def main(filename):
     # Loop over resources, issuing a GET request for each one
     for resource in resources:
         details = tg.req(f"samples/{sample_id}/{resource}")
-        
+
         # Determine the full output file name, replace slash with underscore
         outfile = f"{OUTDIR}/{resource.replace('/', '_')}.json"
 
@@ -83,11 +88,11 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # Ensure the file exists before continuing
-    filename = sys.argv[1]
-    if not os.path.exists(filename):
-        print(f"File '{filename}' does not exist")
+    input_file = sys.argv[1]
+    if not os.path.exists(input_file):
+        print(f"File '{input_file}' does not exist")
         sys.exit(2)
 
     # Pass the filename into main() for submission. Example:
-    #  /Users/nicholasrusso/Desktop/sauto-notes/calc.exe
-    main(filename)
+    #  /Users/nicholasrusso/calc.exe
+    main(input_file)
