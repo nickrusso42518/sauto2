@@ -1,6 +1,6 @@
 {
   "api_version": 2,
-  "id": 5881811,
+  "id": 9087375,
   "data": {
     "items": {
       "1": {
@@ -934,7 +934,7 @@
         "path": "/TEMP/windows_calc.exe",
         "mime-type": "application/x-dosexec; charset=binary",
         "whitelist": [],
-        "created-time": 1592577230,
+        "created-time": 1593024225,
         "read_by": [],
         "created_by": [],
         "sha256": "3091e2abfb55d05d6284b6c4b058b62c8c28afc1d883b699e9a2b5482ec6fd51",
@@ -961,7 +961,7 @@
             "threat_level": 0,
             "first_seen": "0001-01-01T00:00:00Z",
             "query_hash": {
-              "sha256": "46a9f033b1969a05953a088b5d9437c56cc4eaafebe727572708da675833f294"
+              "sha256": "0d32a25289d74437c440720f341f21b870dacf4dfb685edf1f74513077b20aee"
             },
             "status": "UNKNOWN",
             "last_seen": "0001-01-01T00:00:00Z",
@@ -973,13 +973,13 @@
         "path": "/Windows/rescache/rc0008/ResCache.hit",
         "mime-type": "application/octet-stream; charset=binary",
         "whitelist": [],
-        "created-time": 1592577230,
+        "created-time": 1593024225,
         "read_by": [],
         "created_by": [],
-        "sha256": "46a9f033b1969a05953a088b5d9437c56cc4eaafebe727572708da675833f294",
-        "sha1": "724dbad0eb2caec29374c54ea953844adec565e4",
-        "md5": "839c4c4368fdae088922c0fdd02c599f",
-        "entropy": 3.4185433347187257,
+        "sha256": "0d32a25289d74437c440720f341f21b870dacf4dfb685edf1f74513077b20aee",
+        "sha1": "bf002ba75db6df763715e387c5b4cf51e807fc77",
+        "md5": "cfb7b8a04e0b18f052e71c3ef452d5ef",
+        "entropy": 3.418839221723583,
         "type": "",
         "size": 4176,
         "modified_by": [],
@@ -1003,7 +1003,7 @@
             "threat_level": 0,
             "first_seen": "0001-01-01T00:00:00Z",
             "query_hash": {
-              "sha256": "4971f268af1a83fe1ddb9514da8b0d64ed277f17d0e40e2a10106adcf5088d03"
+              "sha256": "56429441305f69b4e84c28a8f2f67159c157b04fb662d8fa23cf8a567865f5b5"
             },
             "status": "UNKNOWN",
             "last_seen": "0001-01-01T00:00:00Z",
@@ -1015,13 +1015,13 @@
         "path": "/Windows/System32/winevt/Logs/Microsoft-Windows-PowerShell%4Operational.evtx",
         "mime-type": "application/octet-stream; charset=binary",
         "whitelist": [],
-        "created-time": 1592577230,
+        "created-time": 1593024225,
         "read_by": [],
         "created_by": [],
-        "sha256": "4971f268af1a83fe1ddb9514da8b0d64ed277f17d0e40e2a10106adcf5088d03",
-        "sha1": "b11f160292962ea6be6186bad4419fbedf24d5d2",
-        "md5": "9956420172434f90a67234f873e381e3",
-        "entropy": 2.0241911904637337,
+        "sha256": "56429441305f69b4e84c28a8f2f67159c157b04fb662d8fa23cf8a567865f5b5",
+        "sha1": "3a2e5430b9e30d27d1369d0a69c4dbad877775c2",
+        "md5": "d071db695917a4b15db54924bf3cc011",
+        "entropy": 2.0235524503085904,
         "type": "evtx",
         "size": 69632,
         "modified_by": [
@@ -1045,7 +1045,7 @@
             "threat_level": 0,
             "first_seen": "0001-01-01T00:00:00Z",
             "query_hash": {
-              "sha256": "55af0800fa8041e45b7042f1665851c5b7597e48024e3a90f688fb13f122dfa4"
+              "sha256": "8ed188182484535e0c3c331380eebd35d30f05679ceba6bb3e56e245d1d372e2"
             },
             "status": "UNKNOWN",
             "last_seen": "0001-01-01T00:00:00Z",
@@ -1057,13 +1057,13 @@
         "path": "/Windows/System32/winevt/Logs/Microsoft-Windows-WMI-Activity%4Operational.evtx",
         "mime-type": "application/octet-stream; charset=binary",
         "whitelist": [],
-        "created-time": 1592577230,
+        "created-time": 1593024225,
         "read_by": [],
         "created_by": [],
-        "sha256": "55af0800fa8041e45b7042f1665851c5b7597e48024e3a90f688fb13f122dfa4",
-        "sha1": "c917fd7151292df6eee2bcfb00a43f105822411e",
-        "md5": "61e7d7fd2bd35bd130a31187357a177d",
-        "entropy": 2.0368674449744586,
+        "sha256": "8ed188182484535e0c3c331380eebd35d30f05679ceba6bb3e56e245d1d372e2",
+        "sha1": "198a7e426abee5daacf387f853ceda397c302a33",
+        "md5": "2aaa19466ef08e20e213a8b400dfe652",
+        "entropy": 2.0373079766527336,
         "type": "evtx",
         "size": 69632,
         "modified_by": [

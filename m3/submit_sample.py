@@ -58,11 +58,13 @@ def main(filename):
     # These are the resources to query for a given sample (there are more)
     resources = [
         "summary",
+        "threat",
         "analysis/metadata",
         "analysis/artifacts",
         "analysis/processes",
         "analysis/network_streams",
         "analysis/annotations",
+        "analysis/iocs",
     ]
 
     # Loop over resources, issuing a GET request for each one

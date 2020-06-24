@@ -1,16 +1,16 @@
 {
   "api_version": 2,
-  "id": 3069626,
+  "id": 6086282,
   "data": {
     "items": {
       "34": {
-        "exited": "Fri, 19 Jun 2020 19:28:26 UTC",
+        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
-        "new": true,
-        "pid": 1324,
+        "new": false,
+        "pid": 4,
         "ppid": null,
-        "process_name": "conhost.exe",
-        "time": "Fri, 19 Jun 2020 19:28:02 UTC"
+        "process_name": "System",
+        "time": ""
       },
       "22": {
         "registry_keys_read": [],
@@ -64,7 +64,7 @@
             ],
             "entry": [
               {
-                "base_address": "0x1210000",
+                "base_address": "0xee0000",
                 "size": "0x80000"
               }
             ],
@@ -81,7 +81,7 @@
             ],
             "entry": [
               {
-                "base_address": "0x1281000",
+                "base_address": "0xf51000",
                 "size": "0xf000"
               }
             ],
@@ -93,7 +93,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:32:47 UTC",
+        "time": "Wed, 24 Jun 2020 18:42:55 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -102,15 +102,6 @@
         "registry_keys_modified": []
       },
       "26": {
-        "exited": "Fri, 19 Jun 2020 19:28:26 UTC",
-        "monitored": false,
-        "new": true,
-        "pid": 1908,
-        "ppid": null,
-        "process_name": "windows_calc.e",
-        "time": "Fri, 19 Jun 2020 19:28:25 UTC"
-      },
-      "28": {
         "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
         "new": false,
@@ -119,333 +110,16 @@
         "process_name": "dwm.exe",
         "time": ""
       },
-      "30": {
-        "exited": "Fri, 19 Jun 2020 19:28:17 UTC",
-        "monitored": false,
-        "new": true,
-        "pid": 1264,
-        "ppid": null,
-        "process_name": "mobsync.exe",
-        "time": "Fri, 19 Jun 2020 19:28:07 UTC"
-      },
-      "21": {
-        "registry_keys_read": [],
-        "files_checked": [],
-        "files_deleted": [],
-        "startup_info": {
-          "runtime_data": "",
-          "image_pathname": "C:\\Windows\\system32\\services.exe",
-          "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
-          "upid": 412,
-          "shell_info": "C:\\Windows\\system32\\services.exe",
-          "command_line": "C:\\Windows\\system32\\services.exe",
-          "incomplete": false,
-          "desktop_info": "",
-          "window_title": "C:\\Windows\\system32\\services.exe",
-          "uthread": 0,
-          "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa80029cd620"
-        },
-        "registry_keys_opened": [],
-        "files_modified": [],
-        "threads": [
-          {
-            "client_id": 8397322214375721000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0x8000028c",
-            "return": 0,
-            "thread": "0x00000000"
-          }
-        ],
-        "atoms_added": [],
-        "analyzed_because": "Process activity after target sample started.",
-        "registry_keys_created": [],
-        "files_created": [],
-        "monitored": true,
-        "parent": "",
-        "children": [],
-        "new": false,
-        "sockets_traffic": [],
-        "sockets": [],
-        "mutants_created": [],
-        "pid": 412,
-        "errors": [],
-        "kpid": "0xfffffa80027e6910",
-        "ppid": null,
-        "memory": [
-          {
-            "allocation_type": [
-              "MEM_RESERVE"
-            ],
-            "entry": [
-              {
-                "base_address": "0xba0000",
-                "size": "0x80000"
-              }
-            ],
-            "process": "0xfffffa80027e6910",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
-              "MEM_COMMIT"
-            ],
-            "entry": [
-              {
-                "base_address": "0xc15000",
-                "size": "0xb000"
-              }
-            ],
-            "process": "0xfffffa80027e6910",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          }
-        ],
-        "time": "Fri, 19 Jun 2020 14:32:44 UTC",
-        "files_read": [],
-        "file_transactions": [],
-        "registry_keys_deleted": [],
-        "mutants_opened": [],
-        "process_name": "services.exe",
-        "registry_keys_modified": []
-      },
-      "33": {
+      "28": {
         "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
         "new": false,
-        "pid": 204,
+        "pid": 284,
         "ppid": null,
-        "process_name": "smss.exe",
+        "process_name": "csrss.exe",
         "time": ""
       },
-      "20": {
-        "registry_keys_read": [],
-        "files_checked": [],
-        "files_deleted": [],
-        "startup_info": {
-          "runtime_data": "",
-          "image_pathname": "C:\\Windows\\System32\\svchost.exe",
-          "dll_path": "C:\\Windows\\System32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
-          "upid": 764,
-          "shell_info": "",
-          "command_line": "C:\\Windows\\System32\\svchost.exe -k LocalSystemNetworkRestricted",
-          "incomplete": false,
-          "desktop_info": "",
-          "window_title": "C:\\Windows\\System32\\svchost.exe",
-          "uthread": 0,
-          "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa80029a8080"
-        },
-        "registry_keys_opened": [],
-        "files_modified": [],
-        "threads": [
-          {
-            "client_id": 8397322214375721000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0x8000032c",
-            "return": 0,
-            "thread": "0x00000000"
-          },
-          {
-            "client_id": 8397322214375721000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0x8000032c",
-            "return": 0,
-            "thread": "0x00000000"
-          },
-          {
-            "client_id": 7820861462072297000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0xffffffff",
-            "return": 0,
-            "thread": "0x00000000"
-          }
-        ],
-        "atoms_added": [],
-        "analyzed_because": "Process activity after target sample started.",
-        "registry_keys_created": [],
-        "files_created": [],
-        "monitored": true,
-        "parent": "",
-        "children": [],
-        "new": false,
-        "sockets_traffic": [],
-        "sockets": [],
-        "mutants_created": [],
-        "pid": 764,
-        "errors": [],
-        "kpid": "0xfffffa800299c340",
-        "ppid": 21,
-        "memory": [
-          {
-            "allocation_type": [
-              "MEM_RESERVE"
-            ],
-            "entry": [
-              {
-                "base_address": "0x320000",
-                "size": "0x80000"
-              },
-              {
-                "base_address": "0x1440000",
-                "size": "0x80000"
-              },
-              {
-                "base_address": "0x1610000",
-                "size": "0x80000"
-              }
-            ],
-            "process": "0xfffffa800299c340",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
-              "MEM_COMMIT"
-            ],
-            "entry": [
-              {
-                "base_address": "0x395000",
-                "size": "0xb000"
-              },
-              {
-                "base_address": "0x14b5000",
-                "size": "0xb000"
-              },
-              {
-                "base_address": "0x1685000",
-                "size": "0xb000"
-              }
-            ],
-            "process": "0xfffffa800299c340",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          }
-        ],
-        "time": "Fri, 19 Jun 2020 14:30:02 UTC",
-        "files_read": [],
-        "file_transactions": [],
-        "registry_keys_deleted": [],
-        "mutants_opened": [],
-        "process_name": "svchost.exe",
-        "registry_keys_modified": []
-      },
-      "17": {
-        "registry_keys_read": [],
-        "files_checked": [],
-        "files_deleted": [],
-        "startup_info": {
-          "runtime_data": "",
-          "image_pathname": "C:\\Windows\\system32\\svchost.exe",
-          "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
-          "upid": 548,
-          "shell_info": "",
-          "command_line": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch",
-          "incomplete": false,
-          "desktop_info": "",
-          "window_title": "C:\\Windows\\system32\\svchost.exe",
-          "uthread": 0,
-          "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8002793320"
-        },
-        "registry_keys_opened": [],
-        "files_modified": [],
-        "threads": [
-          {
-            "client_id": 8397322214375721000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0x80000280",
-            "return": 0,
-            "thread": "0x00000000"
-          }
-        ],
-        "atoms_added": [],
-        "analyzed_because": "Process activity after target sample started.",
-        "registry_keys_created": [],
-        "files_created": [],
-        "monitored": true,
-        "parent": "",
-        "children": [],
-        "new": false,
-        "sockets_traffic": [],
-        "sockets": [],
-        "mutants_created": [],
-        "pid": 548,
-        "errors": [],
-        "kpid": "0xfffffa8002921080",
-        "ppid": 21,
-        "memory": [
-          {
-            "allocation_type": [
-              "MEM_RESERVE"
-            ],
-            "entry": [
-              {
-                "base_address": "0x1470000",
-                "size": "0x80000"
-              }
-            ],
-            "process": "0xfffffa8002921080",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
-              "MEM_COMMIT"
-            ],
-            "entry": [
-              {
-                "base_address": "0x14e5000",
-                "size": "0xb000"
-              }
-            ],
-            "process": "0xfffffa8002921080",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          }
-        ],
-        "time": "Fri, 19 Jun 2020 14:29:35 UTC",
-        "files_read": [],
-        "file_transactions": [],
-        "registry_keys_deleted": [],
-        "mutants_opened": [],
-        "process_name": "svchost.exe",
-        "registry_keys_modified": []
-      },
-      "25": {
-        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
-        "monitored": false,
-        "new": false,
-        "pid": 1644,
-        "ppid": null,
-        "process_name": "WUDFHost.exe",
-        "time": ""
-      },
-      "15": {
+      "14": {
         "registry_keys_read": [],
         "files_checked": [],
         "files_deleted": [],
@@ -461,7 +135,7 @@
           "window_title": "C:\\Windows\\system32\\svchost.exe",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8001b18080"
+          "tid": "0xfffffa800214c650"
         },
         "registry_keys_opened": [],
         "files_modified": [],
@@ -505,11 +179,11 @@
             ],
             "entry": [
               {
-                "base_address": "0xfa0000",
+                "base_address": "0x650000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0xf00000",
+                "base_address": "0x450000",
                 "size": "0x80000"
               }
             ],
@@ -526,11 +200,11 @@
             ],
             "entry": [
               {
-                "base_address": "0x1015000",
+                "base_address": "0x6c5000",
                 "size": "0xb000"
               },
               {
-                "base_address": "0xf75000",
+                "base_address": "0x4c5000",
                 "size": "0xb000"
               }
             ],
@@ -542,12 +216,411 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:29:17 UTC",
+        "time": "Wed, 24 Jun 2020 18:39:25 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
         "mutants_opened": [],
         "process_name": "svchost.exe",
+        "registry_keys_modified": []
+      },
+      "30": {
+        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
+        "monitored": false,
+        "new": false,
+        "pid": 204,
+        "ppid": null,
+        "process_name": "smss.exe",
+        "time": ""
+      },
+      "21": {
+        "registry_keys_read": [],
+        "files_checked": [],
+        "files_deleted": [],
+        "startup_info": {
+          "runtime_data": "",
+          "image_pathname": "C:\\Windows\\system32\\services.exe",
+          "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+          "upid": 412,
+          "shell_info": "C:\\Windows\\system32\\services.exe",
+          "command_line": "C:\\Windows\\system32\\services.exe",
+          "incomplete": false,
+          "desktop_info": "",
+          "window_title": "C:\\Windows\\system32\\services.exe",
+          "uthread": 0,
+          "current_directory": "C:\\Windows\\system32\\",
+          "tid": "0xfffffa8002a0d080"
+        },
+        "registry_keys_opened": [],
+        "files_modified": [],
+        "threads": [
+          {
+            "client_id": 8397322214375721000,
+            "create_suspended": "0x1",
+            "process": "0x00000000",
+            "process_handle": "0x8000028c",
+            "return": 0,
+            "thread": "0x00000000"
+          }
+        ],
+        "atoms_added": [],
+        "analyzed_because": "Process activity after target sample started.",
+        "registry_keys_created": [],
+        "files_created": [],
+        "monitored": true,
+        "parent": "",
+        "children": [],
+        "new": false,
+        "sockets_traffic": [],
+        "sockets": [],
+        "mutants_created": [],
+        "pid": 412,
+        "errors": [],
+        "kpid": "0xfffffa80027e6910",
+        "ppid": null,
+        "memory": [
+          {
+            "allocation_type": [
+              "MEM_RESERVE"
+            ],
+            "entry": [
+              {
+                "base_address": "0xaa0000",
+                "size": "0x80000"
+              }
+            ],
+            "process": "0xfffffa80027e6910",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_COMMIT"
+            ],
+            "entry": [
+              {
+                "base_address": "0xb15000",
+                "size": "0xb000"
+              }
+            ],
+            "process": "0xfffffa80027e6910",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          }
+        ],
+        "time": "Wed, 24 Jun 2020 18:42:51 UTC",
+        "files_read": [],
+        "file_transactions": [],
+        "registry_keys_deleted": [],
+        "mutants_opened": [],
+        "process_name": "services.exe",
+        "registry_keys_modified": []
+      },
+      "33": {
+        "exited": "Wed, 24 Jun 2020 23:38:35 UTC",
+        "monitored": false,
+        "new": true,
+        "pid": 2036,
+        "ppid": null,
+        "process_name": "conhost.exe",
+        "time": "Wed, 24 Jun 2020 23:38:11 UTC"
+      },
+      "20": {
+        "registry_keys_read": [],
+        "files_checked": [],
+        "files_deleted": [],
+        "startup_info": {
+          "runtime_data": "",
+          "image_pathname": "C:\\Windows\\System32\\svchost.exe",
+          "dll_path": "C:\\Windows\\System32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+          "upid": 764,
+          "shell_info": "",
+          "command_line": "C:\\Windows\\System32\\svchost.exe -k LocalSystemNetworkRestricted",
+          "incomplete": false,
+          "desktop_info": "",
+          "window_title": "C:\\Windows\\System32\\svchost.exe",
+          "uthread": 0,
+          "current_directory": "C:\\Windows\\system32\\",
+          "tid": "0xfffffa8001a4c080"
+        },
+        "registry_keys_opened": [],
+        "files_modified": [],
+        "threads": [
+          {
+            "client_id": 7820861462072297000,
+            "create_suspended": "0x1",
+            "process": "0x00000000",
+            "process_handle": "0xffffffff",
+            "return": 0,
+            "thread": "0x00000000"
+          }
+        ],
+        "atoms_added": [],
+        "analyzed_because": "Process activity after target sample started.",
+        "registry_keys_created": [],
+        "files_created": [],
+        "monitored": true,
+        "parent": "",
+        "children": [],
+        "new": false,
+        "sockets_traffic": [],
+        "sockets": [],
+        "mutants_created": [],
+        "pid": 764,
+        "errors": [],
+        "kpid": "0xfffffa800299c340",
+        "ppid": 21,
+        "memory": [
+          {
+            "allocation_type": [
+              "MEM_RESERVE"
+            ],
+            "entry": [
+              {
+                "base_address": "0x1400000",
+                "size": "0x80000"
+              }
+            ],
+            "process": "0xfffffa800299c340",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_COMMIT"
+            ],
+            "entry": [
+              {
+                "base_address": "0x1475000",
+                "size": "0xb000"
+              }
+            ],
+            "process": "0xfffffa800299c340",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          }
+        ],
+        "time": "Wed, 24 Jun 2020 18:40:14 UTC",
+        "files_read": [],
+        "file_transactions": [],
+        "registry_keys_deleted": [],
+        "mutants_opened": [],
+        "process_name": "svchost.exe",
+        "registry_keys_modified": []
+      },
+      "17": {
+        "registry_keys_read": [],
+        "files_checked": [],
+        "files_deleted": [],
+        "startup_info": {
+          "runtime_data": "",
+          "image_pathname": "C:\\Windows\\system32\\svchost.exe",
+          "dll_path": "C:\\Windows\\system32;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+          "upid": 548,
+          "shell_info": "",
+          "command_line": "C:\\Windows\\system32\\svchost.exe -k DcomLaunch",
+          "incomplete": false,
+          "desktop_info": "",
+          "window_title": "C:\\Windows\\system32\\svchost.exe",
+          "uthread": 0,
+          "current_directory": "C:\\Windows\\system32\\",
+          "tid": "0xfffffa8002caeb50"
+        },
+        "registry_keys_opened": [],
+        "files_modified": [],
+        "threads": [
+          {
+            "client_id": 8397322214375721000,
+            "create_suspended": "0x1",
+            "process": "0x00000000",
+            "process_handle": "0x80000280",
+            "return": 0,
+            "thread": "0x00000000"
+          }
+        ],
+        "atoms_added": [],
+        "analyzed_because": "Process activity after target sample started.",
+        "registry_keys_created": [],
+        "files_created": [],
+        "monitored": true,
+        "parent": "",
+        "children": [],
+        "new": false,
+        "sockets_traffic": [],
+        "sockets": [],
+        "mutants_created": [],
+        "pid": 548,
+        "errors": [],
+        "kpid": "0xfffffa8002921080",
+        "ppid": 21,
+        "memory": [
+          {
+            "allocation_type": [
+              "MEM_RESERVE"
+            ],
+            "entry": [
+              {
+                "base_address": "0xcc0000",
+                "size": "0x80000"
+              }
+            ],
+            "process": "0xfffffa8002921080",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_COMMIT"
+            ],
+            "entry": [
+              {
+                "base_address": "0xd35000",
+                "size": "0xb000"
+              }
+            ],
+            "process": "0xfffffa8002921080",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          }
+        ],
+        "time": "Wed, 24 Jun 2020 18:39:44 UTC",
+        "files_read": [],
+        "file_transactions": [],
+        "registry_keys_deleted": [],
+        "mutants_opened": [],
+        "process_name": "svchost.exe",
+        "registry_keys_modified": []
+      },
+      "25": {
+        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
+        "monitored": false,
+        "new": false,
+        "pid": 1644,
+        "ppid": null,
+        "process_name": "WUDFHost.exe",
+        "time": ""
+      },
+      "15": {
+        "registry_keys_read": [],
+        "files_checked": [],
+        "files_deleted": [],
+        "startup_info": {
+          "runtime_data": "",
+          "image_pathname": "C:\\Windows\\system32\\wbem\\wmiprvse.exe",
+          "dll_path": "C:\\Windows\\system32\\wbem;;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
+          "upid": 1600,
+          "shell_info": "",
+          "command_line": "C:\\Windows\\system32\\wbem\\wmiprvse.exe\u0000-secured\u0000-Embedding",
+          "incomplete": false,
+          "desktop_info": "",
+          "window_title": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured",
+          "uthread": 0,
+          "current_directory": "C:\\Windows\\system32\\",
+          "tid": "0xfffffa8001a7fb50"
+        },
+        "registry_keys_opened": [],
+        "files_modified": [],
+        "threads": [
+          {
+            "client_id": 8397322214375721000,
+            "create_suspended": "0x1",
+            "process": "0x00000000",
+            "process_handle": "0x8000060c",
+            "return": 0,
+            "thread": "0x00000000"
+          }
+        ],
+        "atoms_added": [],
+        "analyzed_because": "Process activity after target sample started.",
+        "registry_keys_created": [],
+        "files_created": [],
+        "monitored": true,
+        "parent": "",
+        "children": [],
+        "new": true,
+        "sockets_traffic": [],
+        "sockets": [],
+        "mutants_created": [],
+        "pid": 1600,
+        "errors": [],
+        "kpid": "0xfffffa80029d4080",
+        "ppid": 17,
+        "memory": [
+          {
+            "allocation_type": [
+              "MEM_RESERVE"
+            ],
+            "entry": [
+              {
+                "base_address": "0x12b0000",
+                "size": "0x80000"
+              }
+            ],
+            "process": "0xfffffa80029d4080",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_COMMIT"
+            ],
+            "entry": [
+              {
+                "base_address": "0x131d000",
+                "size": "0x13000"
+              },
+              {
+                "base_address": "0x514000",
+                "size": "0x5000"
+              },
+              {
+                "base_address": "0x51e000",
+                "size": "0x2000"
+              },
+              {
+                "base_address": "0x51b000",
+                "size": "0x1000"
+              },
+              {
+                "base_address": "0x313000",
+                "size": "0x4000"
+              }
+            ],
+            "process": "0xfffffa80029d4080",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          }
+        ],
+        "time": "Wed, 24 Jun 2020 18:39:43 UTC",
+        "files_read": [],
+        "file_transactions": [],
+        "registry_keys_deleted": [],
+        "mutants_opened": [],
+        "process_name": "wmiprvse.exe",
         "registry_keys_modified": []
       },
       "7": {
@@ -620,15 +693,15 @@
             ],
             "entry": [
               {
-                "base_address": "0x2bb0000",
+                "base_address": "0x2820000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0x12f0000",
+                "base_address": "0x13c0000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0x1380000",
+                "base_address": "0x12d0000",
                 "size": "0x80000"
               }
             ],
@@ -645,16 +718,8 @@
             ],
             "entry": [
               {
-                "base_address": "0x2c25000",
+                "base_address": "0x2895000",
                 "size": "0xb000"
-              },
-              {
-                "base_address": "0x236e000",
-                "size": "0x2000"
-              },
-              {
-                "base_address": "0x2375000",
-                "size": "0x3000"
               },
               {
                 "base_address": "0x276f000",
@@ -665,11 +730,11 @@
                 "size": "0x1000"
               },
               {
-                "base_address": "0x1365000",
+                "base_address": "0x1435000",
                 "size": "0xb000"
               },
               {
-                "base_address": "0x13f5000",
+                "base_address": "0x1345000",
                 "size": "0xb000"
               }
             ],
@@ -681,7 +746,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:28:27 UTC",
+        "time": "Wed, 24 Jun 2020 18:38:35 UTC",
         "files_read": [
           "\\srvsvc"
         ],
@@ -707,7 +772,7 @@
           "window_title": "C:\\Windows\\system32\\svchost.exe",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8002ad1520"
+          "tid": "0xfffffa80028fe360"
         },
         "registry_keys_opened": [],
         "files_modified": [],
@@ -759,15 +824,15 @@
             ],
             "entry": [
               {
-                "base_address": "0xa90000",
+                "base_address": "0x1f60000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0x20f0000",
+                "base_address": "0xb30000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0xad0000",
+                "base_address": "0xa80000",
                 "size": "0x80000"
               }
             ],
@@ -784,15 +849,15 @@
             ],
             "entry": [
               {
-                "base_address": "0xb05000",
+                "base_address": "0x1fd5000",
                 "size": "0xb000"
               },
               {
-                "base_address": "0x2165000",
+                "base_address": "0xba5000",
                 "size": "0xb000"
               },
               {
-                "base_address": "0xb45000",
+                "base_address": "0xaf5000",
                 "size": "0xb000"
               }
             ],
@@ -804,22 +869,13 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:29:35 UTC",
+        "time": "Wed, 24 Jun 2020 18:39:44 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
         "mutants_opened": [],
         "process_name": "svchost.exe",
         "registry_keys_modified": []
-      },
-      "36": {
-        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
-        "monitored": false,
-        "new": false,
-        "pid": 320,
-        "ppid": null,
-        "process_name": "wininit.exe",
-        "time": ""
       },
       "12": {
         "registry_keys_read": [],
@@ -881,7 +937,7 @@
                 "size": "0x1000"
               },
               {
-                "base_address": "0xb65000",
+                "base_address": "0x15b5000",
                 "size": "0xb000"
               }
             ],
@@ -898,7 +954,7 @@
             ],
             "entry": [
               {
-                "base_address": "0xaf0000",
+                "base_address": "0x1540000",
                 "size": "0x80000"
               }
             ],
@@ -910,7 +966,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:28:54 UTC",
+        "time": "Wed, 24 Jun 2020 18:39:03 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -918,123 +974,14 @@
         "process_name": "svchost.exe",
         "registry_keys_modified": []
       },
-      "13": {
-        "registry_keys_read": [],
-        "files_checked": [],
-        "files_deleted": [],
-        "startup_info": {
-          "runtime_data": "",
-          "image_pathname": "C:\\Windows\\system32\\wbem\\wmiprvse.exe",
-          "dll_path": "C:\\Windows\\system32\\wbem;;C:\\Windows\\system32;C:\\Windows\\system;C:\\Windows;.;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\",
-          "upid": 1308,
-          "shell_info": "",
-          "command_line": "C:\\Windows\\system32\\wbem\\wmiprvse.exe\u0000-secured\u0000-Embedding",
-          "incomplete": false,
-          "desktop_info": "",
-          "window_title": "C:\\Windows\\system32\\wbem\\wmiprvse.exe -secured",
-          "uthread": 0,
-          "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8001a7db50"
-        },
-        "registry_keys_opened": [],
-        "files_modified": [],
-        "threads": [
-          {
-            "client_id": 8397322214375721000,
-            "create_suspended": "0x1",
-            "process": "0x00000000",
-            "process_handle": "0x8000060c",
-            "return": 0,
-            "thread": "0x00000000"
-          }
-        ],
-        "atoms_added": [],
-        "analyzed_because": "Process activity after target sample started.",
-        "registry_keys_created": [],
-        "files_created": [],
-        "monitored": true,
-        "parent": "",
-        "children": [],
-        "new": true,
-        "sockets_traffic": [],
-        "sockets": [],
-        "mutants_created": [],
-        "pid": 1308,
-        "errors": [],
-        "kpid": "0xfffffa80029d4080",
-        "ppid": 17,
-        "memory": [
-          {
-            "allocation_type": [
-              "MEM_COMMIT"
-            ],
-            "entry": [
-              {
-                "base_address": "0x17c1000",
-                "size": "0xd000"
-              },
-              {
-                "base_address": "0x24d000",
-                "size": "0x13000"
-              },
-              {
-                "base_address": "0x384000",
-                "size": "0x5000"
-              },
-              {
-                "base_address": "0x38e000",
-                "size": "0x2000"
-              },
-              {
-                "base_address": "0x38b000",
-                "size": "0x1000"
-              },
-              {
-                "base_address": "0x283000",
-                "size": "0x4000"
-              }
-            ],
-            "process": "0xfffffa80029d4080",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
-              "MEM_RESERVE"
-            ],
-            "entry": [
-              {
-                "base_address": "0x1e0000",
-                "size": "0x80000"
-              }
-            ],
-            "process": "0xfffffa80029d4080",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          }
-        ],
-        "time": "Fri, 19 Jun 2020 14:29:05 UTC",
-        "files_read": [],
-        "file_transactions": [],
-        "registry_keys_deleted": [],
-        "mutants_opened": [],
-        "process_name": "wmiprvse.exe",
-        "registry_keys_modified": []
-      },
       "27": {
-        "exited": "Fri, 19 Jun 2020 19:28:05 UTC",
+        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
-        "new": true,
-        "pid": 1276,
+        "new": false,
+        "pid": 1044,
         "ppid": null,
-        "process_name": "wevtutil.exe",
-        "time": "Fri, 19 Jun 2020 19:28:05 UTC"
+        "process_name": "spoolsv.exe",
+        "time": ""
       },
       "24": {
         "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
@@ -1049,9 +996,9 @@
         "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
         "new": false,
-        "pid": 4,
+        "pid": 320,
         "ppid": null,
-        "process_name": "System",
+        "process_name": "wininit.exe",
         "time": ""
       },
       "6": {
@@ -1070,7 +1017,7 @@
           "window_title": "C:\\Windows\\system32\\svchost.exe",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8001c32840"
+          "tid": "0xfffffa8001901b50"
         },
         "registry_keys_opened": [],
         "files_modified": [],
@@ -1091,7 +1038,7 @@
         "kpid": "0xfffffa8002a30b30",
         "ppid": 21,
         "memory": [],
-        "time": "Fri, 19 Jun 2020 14:28:27 UTC",
+        "time": "Wed, 24 Jun 2020 18:38:35 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -1115,7 +1062,7 @@
           "window_title": "C:\\Windows\\Explorer.EXE",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8002b7fb50"
+          "tid": "0xfffffa8002b03080"
         },
         "registry_keys_opened": [],
         "files_modified": [],
@@ -1147,44 +1094,14 @@
         "memory": [
           {
             "allocation_type": [
-              "MEM_RESERVE"
-            ],
-            "entry": [
-              {
-                "base_address": "0x3dc0000",
-                "size": "0x80000"
-              }
-            ],
-            "process": "0xfffffa8002ab8600",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
-              "MEM_COMMIT"
-            ],
-            "entry": [
-              {
-                "base_address": "0x3e2f000",
-                "size": "0x11000"
-              }
-            ],
-            "process": "0xfffffa8002ab8600",
-            "process_handle": "0xffffffff",
-            "protect": [
-              "PAGE_READWRITE"
-            ],
-            "zero_bits": 0
-          },
-          {
-            "allocation_type": [
               "MEM_COMMIT",
               "MEM_RESERVE"
             ],
             "entry": [
+              {
+                "base_address": "0x0",
+                "size": "0xe0"
+              },
               {
                 "base_address": "0x0",
                 "size": "0x1ee0"
@@ -1216,9 +1133,43 @@
               "PAGE_READWRITE"
             ],
             "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_RESERVE"
+            ],
+            "entry": [
+              {
+                "base_address": "0x5b10000",
+                "size": "0x80000"
+              }
+            ],
+            "process": "0xfffffa8002ab8600",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
+          },
+          {
+            "allocation_type": [
+              "MEM_COMMIT"
+            ],
+            "entry": [
+              {
+                "base_address": "0x5b7f000",
+                "size": "0x11000"
+              }
+            ],
+            "process": "0xfffffa8002ab8600",
+            "process_handle": "0xffffffff",
+            "protect": [
+              "PAGE_READWRITE"
+            ],
+            "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:28:07 UTC",
+        "time": "Wed, 24 Jun 2020 18:38:13 UTC",
         "files_read": [
           "\\Users\\Administrator\\AppData\\Roaming\\Microsoft\\Windows\\Themes\\slideshow.ini"
         ],
@@ -1246,11 +1197,19 @@
           "window_title": "taskhost.exe",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa80027ab740"
+          "tid": "0xfffffa8001c29b50"
         },
         "registry_keys_opened": [],
         "files_modified": [],
         "threads": [
+          {
+            "client_id": 8397322214375721000,
+            "create_suspended": "0x1",
+            "process": "0x00000000",
+            "process_handle": "0x8000051c",
+            "return": 0,
+            "thread": "0x00000000"
+          },
           {
             "client_id": 8397322214375721000,
             "create_suspended": "0x1",
@@ -1306,19 +1265,23 @@
             ],
             "entry": [
               {
-                "base_address": "0x3e70000",
+                "base_address": "0x2a40000",
                 "size": "0x80000"
               },
               {
-                "base_address": "0x3d60000",
-                "size": "0x80000"
-              },
-              {
-                "base_address": "0x3e10000",
+                "base_address": "0x3e20000",
                 "size": "0x80000"
               },
               {
                 "base_address": "0x3d00000",
+                "size": "0x80000"
+              },
+              {
+                "base_address": "0x29b0000",
+                "size": "0x80000"
+              },
+              {
+                "base_address": "0x3ce0000",
                 "size": "0x80000"
               }
             ],
@@ -1335,19 +1298,23 @@
             ],
             "entry": [
               {
-                "base_address": "0x3ee5000",
+                "base_address": "0x2ab5000",
                 "size": "0xb000"
               },
               {
-                "base_address": "0x3dd5000",
-                "size": "0xb000"
-              },
-              {
-                "base_address": "0x3e85000",
+                "base_address": "0x3e95000",
                 "size": "0xb000"
               },
               {
                 "base_address": "0x3d75000",
+                "size": "0xb000"
+              },
+              {
+                "base_address": "0x2a25000",
+                "size": "0xb000"
+              },
+              {
+                "base_address": "0x3d55000",
                 "size": "0xb000"
               }
             ],
@@ -1359,7 +1326,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:28:53 UTC",
+        "time": "Wed, 24 Jun 2020 18:39:01 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -1368,13 +1335,13 @@
         "registry_keys_modified": []
       },
       "32": {
-        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
+        "exited": "Wed, 24 Jun 2020 23:38:14 UTC",
         "monitored": false,
-        "new": false,
-        "pid": 356,
+        "new": true,
+        "pid": 316,
         "ppid": null,
-        "process_name": "winlogon.exe",
-        "time": ""
+        "process_name": "wevtutil.exe",
+        "time": "Wed, 24 Jun 2020 23:38:14 UTC"
       },
       "10": {
         "registry_keys_read": [],
@@ -1392,7 +1359,7 @@
           "window_title": "C:\\Windows\\System32\\svchost.exe",
           "uthread": 0,
           "current_directory": "C:\\Windows\\system32\\",
-          "tid": "0xfffffa8001a4b080"
+          "tid": "0xfffffa8001bde080"
         },
         "registry_keys_opened": [],
         "files_modified": [
@@ -1436,7 +1403,7 @@
             ],
             "entry": [
               {
-                "base_address": "0x10f0000",
+                "base_address": "0x1180000",
                 "size": "0x80000"
               }
             ],
@@ -1453,7 +1420,7 @@
             ],
             "entry": [
               {
-                "base_address": "0x115d000",
+                "base_address": "0x11ed000",
                 "size": "0x13000"
               }
             ],
@@ -1465,7 +1432,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:28:34 UTC",
+        "time": "Wed, 24 Jun 2020 18:38:42 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -1474,13 +1441,13 @@
         "registry_keys_modified": []
       },
       "31": {
-        "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
+        "exited": "Wed, 24 Jun 2020 23:38:35 UTC",
         "monitored": false,
-        "new": false,
-        "pid": 284,
+        "new": true,
+        "pid": 1704,
         "ppid": null,
-        "process_name": "csrss.exe",
-        "time": ""
+        "process_name": "windows_calc.e",
+        "time": "Wed, 24 Jun 2020 23:38:35 UTC"
       },
       "23": {
         "registry_keys_read": [],
@@ -1534,7 +1501,7 @@
             ],
             "entry": [
               {
-                "base_address": "0xfa0000",
+                "base_address": "0xf90000",
                 "size": "0x80000"
               }
             ],
@@ -1551,7 +1518,7 @@
             ],
             "entry": [
               {
-                "base_address": "0x1007000",
+                "base_address": "0xff7000",
                 "size": "0x19000"
               }
             ],
@@ -1563,7 +1530,7 @@
             "zero_bits": 0
           }
         ],
-        "time": "Fri, 19 Jun 2020 14:32:47 UTC",
+        "time": "Wed, 24 Jun 2020 18:42:55 UTC",
         "files_read": [],
         "file_transactions": [],
         "registry_keys_deleted": [],
@@ -1575,9 +1542,9 @@
         "exited": "Thu, 21 Jul 2185 23:34:33 UTC",
         "monitored": false,
         "new": false,
-        "pid": 1044,
+        "pid": 356,
         "ppid": null,
-        "process_name": "spoolsv.exe",
+        "process_name": "winlogon.exe",
         "time": ""
       }
     }
