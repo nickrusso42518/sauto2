@@ -24,7 +24,7 @@ def main():
     events = amp.req("events", params=params)
 
     # Create the column names for the CSV file
-    text = "event_id,event_type,hostname,severity,disposition,file_name,sha256\n"
+    text = "date,id,type,hostname,severity,disposition,file_name,sha256\n"
     outfile = "recent_threats.csv"
 
     # For each event, ensure it is related to a computer (not general events)
@@ -32,10 +32,10 @@ def main():
         if "computer" not in event:
             continue
 
-        # Append the event ID, type, and hostname to the string,
+        # Append the date, event ID, type, and hostname to the string,
         # separated by commas. Sometimes the event name has commas in
         # it, so those need to be manually removed
-        text += f"{event['event_type_id']},"
+        text += f"{event['date']},{event['event_type_id']},"
         text += f"{event['event_type'].replace(',', '')},"
         text += f"{event['computer']['hostname']},"
 
@@ -45,7 +45,8 @@ def main():
             # Add the severity, disposition, file name, and SHA256 hash
             mfile = event["file"]
             text += f"{event['severity']},{mfile['disposition']},"
-            text += f"{mfile['file_name']},{mfile['identity']['sha256']}\n"
+            text += f"{mfile.get('file_name', 'N/A')},"
+            text += f"{mfile['identity']['sha256']}\n"
 
         # The event is missing "severity" or "file"; pad with commas to align
         else:
