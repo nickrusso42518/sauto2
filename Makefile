@@ -15,11 +15,11 @@ lint:
 .PHONY: unit
 unit:
 	@echo "Starting  unit tests"
-	python amp_test.py
-	python tg_test.py
-	python umb_enf_test.py
-	python umb_inv_test.py
-	python umb_rep_test.py
+	python m2/get_computers.py
+	python m3/tg_test.py
+	python m4/umb_enf_test.py
+	python m4/umb_inv_test.py
+	python m4/umb_rep_test.py
 	@echo "Completed unit tests"
 
 .PHONY: clean
