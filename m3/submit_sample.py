@@ -85,7 +85,7 @@ def main(filename):
 if __name__ == "__main__":
 
     # User must supply a CLI argument of the file to submit for a sample
-    if len(sys.argv) > 2:
+    if len(sys.argv) < 2:
         print("usage: python submit_sample.py <path_to_file>")
         sys.exit(1)
 

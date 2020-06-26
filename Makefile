@@ -7,7 +7,6 @@ all: lint unit clean
 .PHONY: lint
 lint:
 	@echo "Starting  lint"
-	# find . -name "*.yaml" | xargs yamllint -s
 	find . -name "*.py" | xargs pylint
 	find . -name "*.py" | xargs black -l 82 --check
 	@echo "Completed lint"
@@ -19,7 +18,7 @@ unit:
 	python m3/get_samples.py
 	python m4/get_site_activity.py www.internetbadguys.com
 	(cd m4 && python post_sample_events.py)
-	python m4/umb_inv_test.py
+	python m4/investigate_domain.py www.internetbadguys.com
 	@echo "Completed unit tests"
 
 .PHONY: clean
@@ -28,4 +27,5 @@ clean:
 	# find . -name "*.pyc" | xargs -r rm
 	find . -name "*.pyc" | xargs rm
 	rm -f site_activity_www_internetbadguys_com.csv
-	@echo "Starting  clean"
+	rm -rf domain_details
+	@echo "Completed clean"

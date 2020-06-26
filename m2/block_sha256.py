@@ -55,8 +55,8 @@ if __name__ == "__main__":
     # User must supply a CLI argument of the SHA256 hash for the
     # application to blacklist. If not, print error message and exit
     # with error code
-    if len(sys.argv) > 2:
-        print("usage: python block_app.py <sha256_hash_of_app>")
+    if len(sys.argv) < 2:
+        print("usage: python block_sha256.py <sha256_hash_of_app>")
         sys.exit(1)
 
     # Extract the CLI argument (SHA256 hash of app) and pass into main()
