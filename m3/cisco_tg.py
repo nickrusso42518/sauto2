@@ -59,5 +59,5 @@ class CiscoTG(CiscoEndpointBase):
           1. TG_API_KEY: Your personal API key for ThreatGrid
         """
 
-        api_key, = CiscoEndpointBase.load_env_vars("TG_API_KEY")
+        (api_key,) = CiscoEndpointBase.load_env_vars("TG_API_KEY")
         return CiscoTG(api_key)

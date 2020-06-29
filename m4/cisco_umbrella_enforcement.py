@@ -59,5 +59,5 @@ class CiscoUmbrellaEnforcement(CiscoEndpointBase):
           1. UMB_ENF_CUST_KEY: The customer key for a the Umbrella integration
         """
 
-        cust_key, = CiscoEndpointBase.load_env_vars("UMB_ENF_CUST_KEY")
+        (cust_key,) = CiscoEndpointBase.load_env_vars("UMB_ENF_CUST_KEY")
         return CiscoUmbrellaEnforcement(cust_key)

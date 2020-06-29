@@ -53,5 +53,5 @@ class CiscoUmbrellaInvestigate(CiscoEndpointBase):
           1. UMB_INV_API_KEY: The API key for the Umbrella Investigate API
         """
 
-        api_key, = CiscoEndpointBase.load_env_vars("UMB_INV_API_KEY")
+        (api_key,) = CiscoEndpointBase.load_env_vars("UMB_INV_API_KEY")
         return CiscoUmbrellaInvestigate(api_key)
