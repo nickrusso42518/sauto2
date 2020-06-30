@@ -9,7 +9,7 @@ from cisco_amp import CiscoAMP
 
 
 # Quick and dirty alternative to environment variables or CLI args
-CONNECTOR_GUID = "6eb002f2-3574-4fe7-a9e8-f028c618e69d"
+CONNECTOR_GUID = "dbbd00fe-7f3d-45de-bf41-9b6c290c3d09"
 GROUP_NAME = "Audit"
 
 
