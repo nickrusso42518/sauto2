@@ -12,3 +12,4 @@ export TG_API_KEY=<your API key>
 
 The `data_ref/` directory contains example JSON responses from the
 various API calls used in the course, as well as sample logs/artifacts.
+It also includes the `calc.exe` application for sample submission.
