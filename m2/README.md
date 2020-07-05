@@ -2,7 +2,7 @@
 This directory contains code for the Cisco Advanced Malware Protection (AMP)
 API. The documentation link is below:
 
-`https://api-docs.amp.cisco.com/api_resources?api_host=api.amp.cisco.com&api_version=v1`
+`https://api-docs.amp.cisco.com`
 
 Export the following environment variables before using the scripts in
 this directory to avoid any authentication problems.
