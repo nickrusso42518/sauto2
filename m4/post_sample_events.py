@@ -7,6 +7,7 @@ and print the response in a simple text format.
 """
 
 import json
+import time
 from cisco_umbrella_enforcement import CiscoUmbrellaEnforcement
 
 
@@ -26,6 +27,10 @@ def main():
     # application sending these events to Umbrella for analysis/logging
     # Response isn't useful (a malformed UUID)
     umb_enf.req("events", method="post", json=body)
+
+    # Wait a short time for the domains to show up;
+    # could introduce more advanced "waiting" logic
+    time.sleep(5)
 
     # Get the domains seen by the enforcement API
     domains = umb_enf.req("domains")
