@@ -30,7 +30,7 @@ def main(site_url):
 
         # Append the key data items to the text string. Categories are
         # joined from a list of strings into a single space-delineated string
-        text += f"{item['originId']},{item['originId']},{item['originType']},"
+        text += f"{item['datetime']},{item['originId']},{item['originType']},"
         text += f"{item['originLabel']},{item['destination']},"
         text += f"{item['actionTaken']},{' '.join(item['categories'])}\n"
 
