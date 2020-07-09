@@ -44,7 +44,7 @@ if __name__ == "__main__":
     # User must supply a CLI argument of the SHA256 hash for the
     # application to blacklist. If not, print error message and exit
     # with error code
-    if len(sys.argv) > 2:
+    if len(sys.argv) < 2:
         print("usage: python get_site_activity.py <site_to_check>")
         sys.exit(1)
 
