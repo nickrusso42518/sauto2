@@ -51,7 +51,7 @@ def main(site):
             json.dump(details, handle, indent=2)
 
         # Print status message to indicate success
-        print(f"Saved investigate details from {resource} to {outfile}")
+        print(f"Saved data from {resource} to {outfile}")
 
 
 if __name__ == "__main__":
