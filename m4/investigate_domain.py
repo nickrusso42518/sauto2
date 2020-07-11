@@ -55,8 +55,8 @@ def main(site):
 
 
 if __name__ == "__main__":
-    # User must supply a CLI argument of the SHA256 hash for the
-    # application to blacklist. If not, print error message and exit
+    # User must supply a CLI argument of the site for Umbrella
+    # Investigate to dig into. If not, print error message and exit
     # with error code
     if len(sys.argv) < 2:
         print("usage: python investigate_domain.py <site_to_check>")
